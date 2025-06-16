@@ -1,0 +1,142 @@
+.education {
+  background: rgba(30, 41, 59, 0.3);
+}
+
+.education-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(135deg, #7F00FF, #00FFFF);
+}
+
+.education-item {
+  position: relative;
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  border-color: rgba(127, 0, 255, 0.5);
+  box-shadow: 0 15px 30px rgba(127, 0, 255, 0.1);
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 2rem;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #7F00FF, #00FFFF);
+  border-radius: 50%;
+  border: 3px solid #0f172a;
+}
+
+.education-type {
+  display: inline-block;
+  background: rgba(127, 0, 255, 0.2);
+  color: #00FFFF;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(127, 0, 255, 0.3);
+}
+
+.education-degree {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ffffff, #00FFFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-institution {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.education-duration {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.career-journey {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.journey-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.journey-text {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.journey-highlight {
+  background: rgba(127, 0, 255, 0.1);
+  border-left: 3px solid #7F00FF;
+  padding: 1rem;
+  border-radius: 0 8px 8px 0;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .education-timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .education-timeline::before {
+    left: 0.75rem;
+  }
+  
+  .education-item::before {
+    left: -2rem;
+  }
+  
+  .education-item {
+    padding: 1.5rem;
+  }
+  
+  .career-journey {
+    padding: 1.5rem;
+  }
+}
